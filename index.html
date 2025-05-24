@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Type I and Type II Error Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: sans-serif; }
+        #chartContainer { width: 800px; margin: 20px auto; }
+        #controls { width: 800px; margin: 0 auto; }
+    </style>
+</head>
+<body>
+    <div id="chartContainer">
+        <canvas id="myChart"></canvas>
+    </div>
+    <div id="controls">
+        <label for="cutoff">Cutoff:</label>
+        <input type="range" id="cutoff" min="9.5" max="14" step="0.05" value="11">
+        <p>Alpha: <span id="alphaValue"></span></p>
+        <p>Beta: <span id="betaValue"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
